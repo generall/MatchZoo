@@ -4,9 +4,9 @@
       "model_type": "PY",
       "weights_file": "examples/gen_example/weights/cdssm_classify.weights",
       "save_weights_iters": 10,
-      "num_iters": 10,
+      "num_iters": 500,
       "display_interval": 10,
-      "test_weights_iters": 10,
+      "test_weights_iters": 100,
       "optimizer": "adam",
       "learning_rate": 0.0001
   },
