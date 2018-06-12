@@ -4,9 +4,9 @@
       "model_type": "PY",
       "weights_file": "examples/gen_example/variant_6/weights/cdssm_words_classify.weights",
       "save_weights_iters": 10,
-      "num_iters": 500,
+      "num_iters": 250,
       "display_interval": 10,
-      "test_weights_iters": 100,
+      "test_weights_iters": 250,
       "optimizer": "adam",
       "learning_rate": 0.0001
   },
@@ -16,21 +16,21 @@
         "text2_corpus": "./data/gen_example/variant_6/corpus_preprocessed.txt",
         "use_dpool": false,
         "embed_size": 30,
-        "vocab_size": 2737,
+        "vocab_size": 657,
         "train_embed": true,
         "target_mode": "classification",
         "class_num": 2,
-        "text1_maxlen": 15,
-        "text2_maxlen": 15
+        "text1_maxlen": 7,
+        "text2_maxlen": 7
     },
     "train": {
         "input_type": "PointGenerator", 
         "dtype": "cdssm",
         "phase": "TRAIN",
         "use_iter": false,
-        "query_per_iter": 3,
+        "query_per_iter": 20,
         "batch_per_iter": 5,
-        "batch_size": 100,
+        "batch_size": 1024,
         "relation_file": "./data/gen_example/variant_6/relation_train.txt"
     },
     "valid": {
@@ -66,7 +66,7 @@
     "model_path": "matchzoo/models/",
     "model_py": "cdssm.CDSSM",
     "setting": {
-        "kernel_count": 10,
+        "kernel_count": 20,
         "kernel_size": 3,
         "hidden_sizes": [100],
         "dropout_rate": 0.3
