@@ -24,7 +24,7 @@ if __name__ == '__main__':
     print('total relations : %d ...' % (len(rels)))
     prepare.save_corpus(os.path.join(basedir, 'corpus.txt'), corpus)
 
-    rel_train, rel_valid, rel_test = prepare.split_train_valid_test(rels, [0.4, 0.3, 0.3])
+    rel_train, rel_valid, rel_test = prepare.split_train_valid_test(rels, [0.6, 0.3, 0.1])
     prepare.save_relation(os.path.join(basedir, 'relation_train.txt'), rel_train)
     prepare.save_relation(os.path.join(basedir, 'relation_valid.txt'), rel_valid)
     prepare.save_relation(os.path.join(basedir, 'relation_test.txt'), rel_test)
