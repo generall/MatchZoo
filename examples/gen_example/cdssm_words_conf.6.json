@@ -4,9 +4,9 @@
       "model_type": "PY",
       "weights_file": "examples/gen_example/variant_6/weights/cdssm_words_classify.weights",
       "save_weights_iters": 10,
-      "num_iters": 250,
+      "num_iters": 400,
       "display_interval": 10,
-      "test_weights_iters": 250,
+      "test_weights_iters": 400,
       "optimizer": "adam",
       "learning_rate": 0.0001
   },
@@ -28,7 +28,7 @@
         "dtype": "cdssm",
         "phase": "TRAIN",
         "use_iter": false,
-        "query_per_iter": 20,
+        "query_per_iter": 100,
         "batch_per_iter": 5,
         "batch_size": 1024,
         "relation_file": "./data/gen_example/variant_6/relation_train.txt"
