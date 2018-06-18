@@ -16,12 +16,12 @@
         "text2_corpus": "./data/gen_example/variant_8/corpus_preprocessed.txt",
         "use_dpool": false,
         "embed_size": 50,
-        "vocab_size": 657,
+        "vocab_size": 425,
         "train_embed": true,
         "target_mode": "classification",
         "class_num": 2,
-        "text1_maxlen": 7,
-        "text2_maxlen": 7
+        "text1_maxlen": 10,
+        "text2_maxlen": 10
     },
     "train": {
         "input_type": "PointGenerator", 
